@@ -4,12 +4,17 @@ using namespace std;
 
 
 ///1. Imprimir los elementos
+void imprimir(int arr[], int tam){
+    while(tam<5){
+        cout<< arr[tam];
+        tam++;
+    }
+}
+
 int main(){
-    int arr[3]={1,2,3};
-    int lista={};
-    for(int i=0;i<3;i++)
-        lista=arr[i];
-    cout << lista;
+    int arr[5]={1,2,3,4,5}
+    int tam=0;
+    imprimir(arr,tam)
 }
 ///2. Suma (recursiva e iteractiva)
 int main(){
