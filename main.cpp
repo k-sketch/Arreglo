@@ -17,10 +17,17 @@ int main(){
     imprimir(arr,tam)
 }
 ///2. Suma (recursiva e iteractiva)
+
+void sumar(int arr[],int suma){
+    while(suma<4){
+        suma+=arr[suma];
+        cout << suma;
+    }
+}
 int main(){
     int suma=0;
-    int arr[3]={1,2,3};
-    for(int i=0;i<3;i++)
+    int arr[4]={1,2,3,4};
+    for(int i=0;i<4;i++)
         suma+=arr[i];
     cout << suma;
     return 0;
